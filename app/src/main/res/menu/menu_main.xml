@@ -8,7 +8,7 @@
         app:showAsAction="never" />
     <item
         android:id="@+id/action_save"
-        android:title="Save"
+        android:title="Rename"
         android:visible="true"
         app:showAsAction="never" />
     <item

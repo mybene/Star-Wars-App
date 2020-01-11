@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import com.example.starwarsapp.R;
@@ -23,7 +24,9 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
         setContentView(R.layout.activity_welcome);
 
       available=(TextView)findViewById(R.id.allList);
-      newHero=(TextView)findViewById(R.id.newHero) ;
+      newHero=(TextView)findViewById(R.id.newHero);
+
+
         available.setOnClickListener(this);
         newHero.setOnClickListener(this);
 
