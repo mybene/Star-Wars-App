@@ -6,11 +6,11 @@
         android:title="Logout"
         android:visible="true"
         app:showAsAction="never" />
-    <item
-        android:id="@+id/action_save"
-        android:title="Rename"
-        android:visible="true"
-        app:showAsAction="never" />
+<!--    <item-->
+<!--        android:id="@+id/action_save"-->
+<!--        android:title="Rename"-->
+<!--        android:visible="true"-->
+<!--        app:showAsAction="never" />-->
     <item
         android:id="@+id/action_delete"
         android:title="Delete"

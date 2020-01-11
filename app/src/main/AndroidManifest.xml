@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UI.NewHeroActivity"></activity>
+        <activity android:name=".UI.SavedHeroActivity"></activity>
         <activity android:name=".UI.AvailablesHeroesActivity" />
         <activity android:name=".UI.WelcomeActivity" />
         <activity android:name=".UI.MainActivity">

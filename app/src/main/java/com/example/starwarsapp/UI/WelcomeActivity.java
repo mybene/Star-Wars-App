@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import com.example.starwarsapp.R;
@@ -41,7 +40,7 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
         }
 
         if(v==newHero){
-            Intent intent= new Intent(WelcomeActivity.this,NewHeroActivity.class);
+            Intent intent= new Intent(WelcomeActivity.this, SavedHeroActivity.class);
             startActivity(intent);
         }
     }

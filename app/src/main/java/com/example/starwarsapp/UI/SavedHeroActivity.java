@@ -2,6 +2,7 @@ package com.example.starwarsapp.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -9,7 +10,7 @@ import android.view.MenuItem;
 
 import com.example.starwarsapp.R;
 
-public class NewHeroActivity extends AppCompatActivity {
+public class SavedHeroActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,9 +33,24 @@ public class NewHeroActivity extends AppCompatActivity {
             signOut();
             return true;
         }
+        if(id== R.id.action_save){
+            save();
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
     }
 
-    private void signOut() {
+    private void save() {
+
+    }
+
+    private void signOut(){
+//        FirebaseAuth.getInstance().signOut();
+        Intent intent;
+        intent = new Intent(SavedHeroActivity.this,WelcomeActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+        finish();
     }
 }
